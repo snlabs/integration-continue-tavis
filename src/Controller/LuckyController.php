@@ -13,8 +13,13 @@ class LuckyController
     public function number($max)
     {
         $number = random_int(0, $max);
+
+
+
         return new Response(
             '<html><body>Lucky number: '.$number.'</body></html>'
         );
     }
+
+    
 }
